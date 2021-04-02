@@ -39,6 +39,7 @@ body{
 }
 
 p{
+    
     background-color: lightblue;
     font-size: clamp(1rem,2vw, 3rem);
 }
