@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Titillium+Web:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+  }
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 5;    
+    backdrop-filter: blur(5px);
+  }
+
+  .header a{
+      text-decoration: none;
+      color: #111;
+      font-size: 2rem;
+  }
+
+  .menu-items{
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+
+.menu-item{
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-item:hover{
+    background-color: #ccc7d3;
+}
+
+.section{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section{
+    background-color: #DFDBE5;
+background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-col {
+    padding: clamp(1rem, 8vw, 5rem);
+    max-width: 50%;
+  }
+  
+  .section h1 {
+    font-family: "Titillium Web", serif;
+    font-size: clamp(40px, 4vw, 60px);
+    font-weight: 700;
+    line-height: clamp(6vw, vw, 10vw);
+    color: #78688d;
+    text-transform: uppercase;
+  }
+  
+  .section h2 {
+    font-size: clamp(18px, 2.5vw, 60px);
+    color: #5a4d70;
+    padding-left: 3rem;
+    text-transform: uppercase;
+  }
+  
+  .section p {
+    color: #5a4d70;
+    padding-right: 1rem;
+  }
+  
+  .hero-section img {
+    width: clamp(250px, 30vw, 500px);
+    transform: scaleX(-1);
+  }
+  
+
+
