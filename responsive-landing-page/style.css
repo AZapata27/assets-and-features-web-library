@@ -60,15 +60,15 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
 }
 
 .hero-col {
-    padding: clamp(1rem, 8vw, 5rem);
+    padding: clamp(1rem, 5vw, 3rem);
     max-width: 50%;
   }
   
   .section h1 {
     font-family: "Titillium Web", serif;
-    font-size: clamp(40px, 4vw, 60px);
+    font-size: clamp(30px, 4vw, 70px);
     font-weight: 700;
-    line-height: clamp(6vw, vw, 10vw);
+    line-height: .8;
     color: #78688d;
     text-transform: uppercase;
   }
@@ -87,8 +87,47 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
   
   .hero-section img {
     width: clamp(250px, 30vw, 500px);
-    transform: scaleX(-1);
   }
-  
 
+
+
+  /* SHAPE DIVIDER */
+.custom-shape-divider-bottom{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+@media (max-width: 930px){
+  .custom-shape-divider-bottom svg{
+    width: calc(200% + 1.3px);
+    height: 120px;
+  }
+
+}
+
+@media (max-width: 740px){
+  .custom-shape-divider-bottom svg{
+    width: calc(250% + 1.3px);
+    height: 120px;
+  }
+
+}
 
